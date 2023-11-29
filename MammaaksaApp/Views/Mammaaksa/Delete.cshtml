@@ -1,0 +1,33 @@
+﻿@model MammaaksaApp.Models.Mamaaksa
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Haqi</h1>
+<p></p>
+<h5>Mammaaksa kana haqu barbaaddu??</h5>
+<div>
+   
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gaaffii)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gaaffii)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.deebii)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.deebii)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Haqii!" class="btn btn-danger" /> &nbsp;
+        <a asp-action="Index" style="margin:300px;">Dubatti Deebi'i</a>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+﻿@model MammaaksaApp.Models.Mamaaksa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Dabalata</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gaaffii)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gaaffii)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.deebii)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.deebii)
+        </dd>
+    </dl>
+</div>
+<div>
+    
+    <a asp-action="Index" style="margin:300px;">Dubatti Debi'i</a>
+</div>

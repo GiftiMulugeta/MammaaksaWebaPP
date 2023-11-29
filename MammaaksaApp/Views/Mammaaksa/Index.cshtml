@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MammaaksaApp.Models.Mamaaksa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table>
+    <tr>
+        <td><a asp-action="Create" style="font-size:30px">Mammaksa Ida'i'</a></td>
+        <td>
+            <form asp-action="Logout">
+                <input type="submit" value="Bahii!" class="btn btn-danger" style="margin-left:500px" />
+            </form>
+        </td>
+        </tr>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.gaaffii)
+            </th>
+          
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.gaaffii)
+            
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Deebiisii </a> &nbsp
+                
+                    <a asp-action="Details" asp-route-id="@item.Id">Ilaalii</a>  &nbsp
+                    <a asp-action="Delete" asp-route-id="@item.Id">Haqi</a>  &nbsp
+
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

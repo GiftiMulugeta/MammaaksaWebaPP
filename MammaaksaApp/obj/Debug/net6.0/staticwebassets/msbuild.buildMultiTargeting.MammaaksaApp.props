@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MammaaksaApp.props" />
+</Project>
